@@ -1,0 +1,44 @@
+// DoctorProfile.scss
+// Переменные для цветов и прочих параметров
+$primary-color: #4e73df;
+$secondary-color: #fff;
+$font-family: Arial, sans-serif;
+
+// Стили для страницы доктора
+.doctor-profile {
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-family: $font-family;
+  padding: 20px;
+  
+  .doctor-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .doctor-photo {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-right: 20px;
+      border: 3px solid $secondary-color;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .doctor-details {
+      h1 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+
+      .doctor-position {
+        font-weight: bold;
+      }
+    }
+  }
+}

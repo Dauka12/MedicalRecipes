@@ -3,6 +3,7 @@ import React from 'react';
 
 import Header from './components/Header';
 import Home from './pages/Home';
+import Profile from './components/Profile';
 import NotFound from './pages/NotFound';
 import { Route, Routes } from 'react-router-dom';
 import Cart from './pages/Cart';
@@ -29,7 +30,8 @@ function App() {
       
       <div className="content">
         <Routes>
-          <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
           <Route path="/Cart" element={<Cart />}/>
           <Route path="*" element={<NotFound/>}/>
         </Routes>
