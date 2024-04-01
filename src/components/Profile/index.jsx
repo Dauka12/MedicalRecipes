@@ -1,15 +1,16 @@
 // DoctorProfile.js
 import React from 'react';
-import './Profile.scss'; // Подключаем стили
+import './Profile.scss';// Подключаем стили
+import photo from './../../assets/img/doctor.jpg'
 
 function DoctorProfile() {
   const doctorData = {
-    firstName: 'Иван',
-    lastName: 'Иванов',
-    position: 'Терапевт',
-    workplace: 'Городская клиника №1',
+    firstName: 'Талгат',
+    lastName: ' ',
+    position: 'Айтушник',
+    workplace: 'Astana IT University',
     address: 'ул. Пушкина, д. 10',
-    photo: 'url_to_photo.jpg', // Путь к фото доктора
+    photo: photo, // Путь к фото доктора
     // Другие данные о докторе
   };
 
@@ -20,7 +21,7 @@ function DoctorProfile() {
         <div className="doctor-details">
           <h1>{doctorData.firstName} {doctorData.lastName}</h1>
           <p className="doctor-position">{doctorData.position}</p>
-          <p><strong>Место работы:</strong> {doctorData.workplace}</p>
+          <p><strong>Место обучения:</strong> {doctorData.workplace}</p>
           <p><strong>Адрес:</strong> {doctorData.address}</p>
         </div>
       </div>

@@ -6,10 +6,11 @@ $font-family: Arial, sans-serif;
 
 // Стили для страницы доктора
 .doctor-profile {
-  background-color: $primary-color;
+  background-color: $secondary-color;
   color: $secondary-color;
   font-family: $font-family;
   padding: 20px;
+  
   
   .doctor-info {
     display: flex;
@@ -21,7 +22,7 @@ $font-family: Arial, sans-serif;
       width: 150px;
       height: 150px;
       margin-right: 20px;
-      border: 3px solid $secondary-color;
+      border: 3px solid black;
       background-size: cover;
       background-position: center;
     }
