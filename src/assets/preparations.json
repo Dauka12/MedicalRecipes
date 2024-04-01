@@ -1,8 +1,8 @@
 [
     {
     "id": 0,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/f035c7f46c0844069722f2bb3ee9f113_584x584.jpeg",
-    "title": "Пепперони Фреш с перцем",
+    "imageUrl": "https://compendium.com.ua/img/inf/12358_90_39_17_18.jpg",
+    "title": "Аспирин",
     "types": [
     0,
     1
@@ -18,8 +18,8 @@
     },
     {
     "id": 1,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/2ffc31bb-132c-4c99-b894-53f7107a1441.jpg",
-    "title": "Сырная",
+    "imageUrl": "https://www.vidal.ru/upload/products/21791-ascorbic-acid-altaivit.jpg",
+    "title": "Аскорбинка",
     "types": [
     0
     ],
@@ -33,8 +33,8 @@
     },
     {
     "id": 2,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/6652fec1-04df-49d8-8744-232f1032c44b.jpg",
-    "title": "Цыпленок барбекю",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUrdIq6uLdamaCiLX9ld3-6I6TcZvXnBVWKg&usqp=CAU",
+    "title": "Антигриппин",
     "types": [
     0
     ],
@@ -48,8 +48,8 @@
     },
     {
     "id": 3,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/af553bf5-3887-4501-b88e-8f0f55229429.jpg",
-    "title": "Кисло-сладкий цыпленок",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqH_hqypZITpTbEh0Zya8wjhn4d9TMqYKHlA&usqp=CAU",
+    "title": "Тайлол фен хот",
     "types": [
     1
     ],
@@ -64,8 +64,8 @@
     },
     {
     "id": 4,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/b750f576-4a83-48e6-a283-5a8efb68c35d.jpg",
-    "title": "Чизбургер-пицца",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNzNnKK2TJW3FKNC3RSG5KJJ9i8b16jQX_VA&usqp=CAU",
+    "title": "Йод",
     "types": [
     0,
     1
@@ -81,8 +81,8 @@
     },
     {
     "id": 5,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/1e1a6e80-b3ba-4a44-b6b9-beae5b1fbf27.jpg",
-    "title": "Крэйзи пепперони",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmdWkH6KIM5Ut_cjW-EyARCh00y9Id1ZkDWg&usqp=CAU",
+    "title": "Кетерол",
     "types": [
     0
     ],
@@ -96,8 +96,8 @@
     },
     {
     "id": 6,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d2e337e9-e07a-4199-9cc1-501cc44cb8f8.jpg",
-    "title": "Пепперони",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuMarsMm6EBbNrbFwXFVmy-Ia2ySNiWyzyNQ&usqp=CAU",
+    "title": "Парацетамол",
     "types": [
     0,
     1
@@ -113,8 +113,8 @@
     },
     {
     "id": 7,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/d48003cd-902c-420d-9f28-92d9dc5f73b4.jpg",
-    "title": "Маргарита",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSXdlha-UHeJ_iwqSd6XzAc1RRLNbJv6z9fQ&usqp=CAU",
+    "title": "Но-шпа",
     "types": [
     0,
     1
@@ -130,8 +130,8 @@
     },
     {
     "id": 8,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/ec29465e-606b-4a04-a03e-da3940d37e0e.jpg",
-    "title": "Четыре сезона",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQAXZXPuqYhW7PxqbJhV0LGqMyh2CuTAhLJw&usqp=CAU",
+    "title": "Нурофен",
     "types": [
     0,
     1
@@ -147,8 +147,8 @@
     },
     {
     "id": 9,
-    "imageUrl": "https://dodopizza.azureedge.net/static/Img/Products/Pizza/ru-RU/30367198-f3bd-44ed-9314-6f717960da07.jpg",
-    "title": "Овощи и грибы 🌱",
+    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_Ek5c8dLchRg3w-U8Uni9iPJmEdLvY7lWZw&usqp=CAU",
+    "title": "Африн",
     "types": [
     0,
     1
