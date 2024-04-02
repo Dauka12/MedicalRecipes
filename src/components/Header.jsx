@@ -25,7 +25,7 @@ export default function Header() {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" >
       <List>
-        {['Profile', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {['Profile', 'Medicine Store', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem key={text} disablePadding>
            {text === 'Profile' ? ( // Проверка, чтобы создать Link только для элемента "Profile"
             <ListItemButton component={Link} to="/profile" onClick={toggleDrawer(false)}> 
@@ -34,7 +34,16 @@ export default function Header() {
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
-          ) : (
+            ) :
+              text === 'Medicine Store' ? ( // Проверка, чтобы создать Link только для элемента "Profile"
+            <ListItemButton component={Link} to="/" onClick={toggleDrawer(false)}> 
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+            ):
+              (
             <ListItemButton onClick={toggleDrawer(false)}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
@@ -79,7 +88,7 @@ export default function Header() {
         <Search/>
         <div className="header__cart">
           <Link to="/Cart" className="button button--cart" >
-            <span>Doctors page</span>
+            <span>Cart</span>
             <div className="button__delimiter"></div>
             <svg
               width="18"
