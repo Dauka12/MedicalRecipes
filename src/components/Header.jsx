@@ -1,12 +1,65 @@
-import { Link } from "react-router-dom"
-import Search from "./Search"
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import Search from "./Search";
 import logo from "../assets/img/logo.jpg"
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import Button from '@mui/material/Button';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import InboxIcon from '@mui/icons-material/MoveToInbox';
+import MailIcon from '@mui/icons-material/Mail';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
+  };
+  
+  const DrawerList = (
+    <Box sx={{ width: 250 }} role="presentation" >
+      <List>
+        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton onClick={toggleDrawer(false)}>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {['All mail', 'Trash', 'Spam'].map((text, index) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton onClick={toggleDrawer(false)}>
+              <ListItemIcon>
+                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+    </Box>
+  );
 
 
   return (
     <div className="header">
       <div className="container">
+      <Button onClick={toggleDrawer(true)}><MenuOpenIcon/></Button>
+      <Drawer open={open} onClose={toggleDrawer(false)} ModalProps={{ onBackdropClick: toggleDrawer(false) }}>
+        {DrawerList}
+      </Drawer>
         <Link to="/"><div className="header__logo">
           <img width="52" src={logo} alt="Pizza logo" />
           <div>
