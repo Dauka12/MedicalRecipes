@@ -13,7 +13,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import MenuOpenIcon from '@mui/icons-material/Menu';
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -25,14 +25,23 @@ export default function Header() {
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" >
       <List>
-        {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
+        {['Profile', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem key={text} disablePadding>
+           {text === 'Profile' ? ( // Проверка, чтобы создать Link только для элемента "Profile"
+            <ListItemButton component={Link} to="/profile" onClick={toggleDrawer(false)}> 
+              <ListItemIcon>
+                <InboxIcon />
+              </ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          ) : (
             <ListItemButton onClick={toggleDrawer(false)}>
               <ListItemIcon>
                 {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
               </ListItemIcon>
               <ListItemText primary={text} />
             </ListItemButton>
+          )}
           </ListItem>
         ))}
       </List>
